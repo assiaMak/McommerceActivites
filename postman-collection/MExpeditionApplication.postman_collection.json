@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "7d3e565b-cc34-4c71-a93a-847a361ed61e",
+		"name": "MExpeditionApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ajouterExpedition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 1,\r\n   \"idCommande\": 3,\r\n   \"etat\": 1\r\n }"
+				},
+				"url": {
+					"raw": "localhost:9005/expedition",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"expedition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifierExpedition",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 1,\r\n   \"idCommande\": 1,\r\n   \"etat\": 1\r\n }"
+				},
+				"url": {
+					"raw": "localhost:9005/expedition",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"expedition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recupererExpedition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:9005/expeditions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"expeditions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
